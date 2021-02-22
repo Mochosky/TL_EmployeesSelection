@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Infrastructure
+﻿namespace Infrastructure
 {
     public interface IEmployeeBase
     {

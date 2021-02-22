@@ -6,7 +6,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Data\Services.csproj" />
-    <ProjectReference Include="..\Infrastucture\Infrastructure.csproj" />
   </ItemGroup>
 
   <ItemGroup>
