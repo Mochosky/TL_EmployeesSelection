@@ -1,10 +1,6 @@
-﻿
+﻿using Infrastructure;
 
-using Infrastructure;
-
-using System;
-
-
+using System.Diagnostics.CodeAnalysis;
 
 namespace Business
 {
@@ -17,22 +13,27 @@ namespace Business
             _employeeBase = employeeBase;
         }
 
+        [ExcludeFromCodeCoverage]
         public abstract decimal annualSalary
         {
             get;
         }
+
         public string contractTypeName
         {
             get => _employeeBase.contractTypeName; set => _employeeBase.contractTypeName = value;
         }
+
         public decimal hourlySalary
         {
             get => _employeeBase.hourlySalary; set => _employeeBase.hourlySalary = value;
         }
+
         public int id
         {
             get => _employeeBase.id; set => _employeeBase.id = value;
         }
+
         public decimal monthlySalary
         {
             get => _employeeBase.monthlySalary; set => _employeeBase.monthlySalary = value;

@@ -1,9 +1,10 @@
 ﻿using Infrastructure;
 
-using System;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Data
 {
+    [ExcludeFromCodeCoverage]
     public class EmployeeBase : IEmployeeBase
     {
         public string contractTypeName
